@@ -1,7 +1,9 @@
 <html>
-	
+	<head>
+		<!-- Bootstrap Core CSS -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+	</head>
 	<body>
-		
 		<script>
 			function toNum(n){
 				  return parseInt(n);
@@ -33,18 +35,21 @@
 		</form>
 		<div class="row">
 			<div class="col-md-6">
-				<button class="btn" onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-				<button class="btn" onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
+				<button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+				<button  onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
 			</div>
 			<br>
+		</div>
+		<br>
+		<div class="row">
 			<div class="col-md-6">
-				<button class="btn" onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
-				<button class="btn" onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+				<button onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+				<button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
 			</div>
 		</div>
 		<!-- jQuery -->
-		<script src="../js/jquery.js"></script>
+		<script src="../../js/jquery.js"></script>
 		<!-- Bootstrap Core JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
     </body>
 </html>
